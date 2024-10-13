@@ -79,18 +79,14 @@ const ProductDetailPage: React.FC = () => {
   }
 
   return (
-    <Box display="flex" gap={5} mx="200px" my="100px">
+    <Box className="flex flex-col sm:flex-row md:flex-col gap-[5px] mx-[25px] my-[25px] sm:gap-[10px] md:mx-[20px] lg:gap-[40px] lg:m-[50px]" >
+
       <Card
-        sx={{
-          display: "flex",
-          flexDirection: "row",
-          flex: "0 0 80%",
-          padding: 2,
-        }}
+        className="flex 0 0 80% flex-col sm:flex-row p-[16px]"
       >
         <CardMedia
+          className="w-[100%] md:!w-[50%] lg:!w-[50%] object-cover"
           component="img"
-          sx={{ width: "50%", objectFit: "cover" }}
           image={product.image}
           alt={product.name}
         />

@@ -36,7 +36,7 @@ const Product: React.FC<ProductProps> = ({
       key={id}
       onClick={handleNavigate}
       style={{ cursor: "pointer" }}
-      className="m-[0px] md-[0px] xl:m-[16px] p-[10px] maxWidth-[345px]"
+      className="m-[0px] md-[0px] p-[10px] maxWidth-[345px]"
     >
       <CardMedia component="img" height="140" image={image} alt={productName} />
       <CardContent
@@ -61,7 +61,7 @@ const Product: React.FC<ProductProps> = ({
           variant="h5"
           component="div"
           sx={{
-            fontSize: { xs: "1.2rem", sm: "1.5rem", md: "1.75rem" },
+            fontSize: { xs: ".5rem", sm: ".8rem", md: "1rem" },
           }}
         >
           {productName}
@@ -73,7 +73,7 @@ const Product: React.FC<ProductProps> = ({
         sx={{
           width: "100%",
           padding: 1,
-          fontSize: { xs: "0.8rem", sm: "1rem", md: "1.2rem" },
+          fontSize: { xs: "0.5rem", sm: ".6rem", md: ".8rem" },
         }}
         onClick={(e) => {
           e.stopPropagation();

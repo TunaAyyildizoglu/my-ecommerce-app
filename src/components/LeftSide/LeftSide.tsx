@@ -100,10 +100,10 @@ const LeftSide: React.FC<LeftSideProps> = ({
   }, [products, dispatch]);
 
   return (
-    <div className="flex flex-col gap-y-5">
-      <div className="flex flex-col">
+    <div className="flex flex-col gap-y-5 md:flex-row lg:flex-col md:gap-[10px]">
+      <div className="flex flex-col sm:w-[400px] md:w-[250px]  lg:w-[300px] ">
         <label className="mb-2">Sort By</label>
-        <div className="border rounded p-3 w-full sm:w-[310px] md:w-[400px] xl:w-[450px] bg-white shadow-md">
+        <div className="border rounded p-3 sm:w-[400px] md:w-[250px] lg:w-[300px] h-[200px] bg-white shadow-md">
           <FormControl>
             <RadioGroup
               aria-labelledby="demo-radio-buttons-group-label"
@@ -136,12 +136,12 @@ const LeftSide: React.FC<LeftSideProps> = ({
         </div>
       </div>
 
-      <div className="flex flex-col">
+      <div className="flex flex-col sm:w-[400px] md:w-[250px] lg:w-[300px]">
         <label className="mb-2">Brands</label>
-        <div className="border rounded p-3 w-full sm:w-[310px] md:w-[400px] xl:w-[450px] bg-white shadow-md">
+        <div className="border rounded p-3 sm:w-[400px] md:w-[250px] lg:w-[300px] bg-white shadow-md">
           <SearchInput
             placeholder="Search…"
-            className="mb-[15px]"
+            className="mb-[15px] w-[200px]"
             value={brandSearch}
             onChange={(e) => setBrandSearch(e.target.value)}
           />
@@ -166,12 +166,12 @@ const LeftSide: React.FC<LeftSideProps> = ({
         </div>
       </div>
 
-      <div className="flex flex-col">
+      <div className="flex flex-col sm:w-[400px] md:w-[250px] lg:w-[300px]">
         <label className="mb-2">Models</label>
-        <div className="border rounded p-3 w-full sm:w-[310px] md:w-[400px] lg:w-[450px] bg-white shadow-md">
+        <div className="border rounded p-3 sm:w-[400px] md:w-[250px] lg:w-[300px] bg-white shadow-md">
           <SearchInput
             placeholder="Search…"
-            className="mb-[15px]"
+            className="mb-[15px] w-[200px]"
             value={modelSearch}
             onChange={(e) => setModelSearch(e.target.value)}
           />
