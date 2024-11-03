@@ -48,7 +48,7 @@ const Header: React.FC = () => {
             className="font-bold text-2xl cursor-pointer"
             onClick={handleNavigateHome}
           >
-            Eteration
+            LOGO
           </Typography>
         </Box>
 
